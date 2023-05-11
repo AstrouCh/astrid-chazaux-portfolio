@@ -10,3 +10,79 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Test gradient text
+
+body {
+  background: rgb(237,219,249);
+  background: linear-gradient(90deg, rgba(237,219,249,1) 0%, rgba(189,224,254,1) 100%);
+  color: #313131;
+}
+
+.main-page {
+  display: flex;
+}
+
+.navbar {
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: $headers-font;
+
+
+  li {
+    display: inline;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #313131;
+  }
+}
+
+.left-box {
+  width: 25%;
+  text-align: center;
+  padding: 70px;
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.right-box {
+  width: 75%;
+}
+
+.project-container {
+  text-align: center;
+  width: 90%;
+  margin-top: 10%;
+  border: black solid 4px;
+  position: relative;
+
+  img {
+    width: 75%;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.project-container:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -2em;
+  right: -2em;
+  border: 4px solid #000;
+  position: absolute;
+}
