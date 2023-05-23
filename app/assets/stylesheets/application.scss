@@ -19,13 +19,15 @@ body {
   color: #313131;
 }
 
+a:hover {
+  color: black;
+}
+
+
 .main-page {
   display: flex;
 }
 
-.navbar {
-  justify-content: center;
-}
 
 ul {
   list-style-type: none;
@@ -75,6 +77,16 @@ ul {
   width: 80%;
 }
 
+.navbar {
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgb(237,219,249);
+  background: linear-gradient(90deg, rgba(237,219,249,1) 0%, rgba(189,224,254,1) 100%);
+}
+
+
 .project-container {
   margin: 0 auto;
   text-align: center;
@@ -94,7 +106,6 @@ ul {
 
 .website_video {
   width: 85%;
-  margin-bottom: 2rem;
   margin-left: 2rem;
 }
 
@@ -109,19 +120,13 @@ ul {
 }
 
 .website-links {
-  display: flex;
-  align-items: center;
-  i {
-    margin: 0 auto;
-  }
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+
 }
 .website-links a {
-  color: black;
-  opacity: 0.15;
+  color: #313131;
   text-decoration: none;
   font-size: 50px;
   padding: 0px 10px;
-}
-.website-links a:hover {
-  opacity: 1;
 }

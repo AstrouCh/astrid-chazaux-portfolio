@@ -1,3 +1,18 @@
+<div class="cursor">
+  <div class="cursor__ball cursor__ball--big ">
+    <svg height="30" width="30">
+      <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+    </svg>
+  </div>
+
+  <div class="cursor__ball cursor__ball--small">
+    <svg height="10" width="10">
+      <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+    </svg>
+  </div>
+</div>
+
+
 <div class="main-page">
   <div class="left-box">
     <H1>ASTRID</H1>
@@ -6,23 +21,26 @@
   </div>
   <div class="right-box">
     <div class="navbar">
-      <ul>
+      <ul class="hoverable">
         <li><a href="#">MY WORK |</a> </li>
         <li><a href="#">ABOUT ME</a> </li>
       </ul>
     </div>
     <div class="project-container">
-        <p>weekend.ink<P>
+        <p>weekend.ink<p>
           <%= video_tag "weekend.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
-      <div class="website-links">
-        <a href="#"><i class="fa-solid fa-globe"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
+        <div class="website-links hoverable">
+          <a href="https://www.weekend.ink/"><i class="fa-solid fa-globe"></i></a>
+          <a  href="https://github.com/rmPablo1/weekend"><i class="fab fa-github"></i></a>
+        </div>
     </div>
     <div class="project-container">
-        <p>otroser.es<P>
+        <p>otroser.es<p>
           <%= video_tag "Otroser.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
+         <div class="website-links hoverable">
+            <a href='https://otroser.herokuapp.com'><i class="fa-solid fa-globe"></i></a>
+            <a href="https://github.com/AstrouCh/otroser"><i class="fab fa-github"></i></a>
+          </div>
     </div>
-
   </div>
 </div>
