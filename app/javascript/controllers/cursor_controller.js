@@ -1,4 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
+import { TweenMax } from 'gsap';
+
 
 // Connects to data-controller="cursor"
 export default class extends Controller {

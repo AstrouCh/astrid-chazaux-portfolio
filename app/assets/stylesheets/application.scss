@@ -26,6 +26,7 @@ a:hover {
 
 .main-page {
   display: flex;
+  overflow: auto;
 }
 
 
@@ -55,6 +56,7 @@ ul {
   padding: 70px;
   position: sticky;
   top: 0;
+
   background-color: #313131;
 
   h1, h2 {
@@ -122,8 +124,8 @@ ul {
 .website-links {
   margin-bottom: 3rem;
   margin-left: 2rem;
-
 }
+
 .website-links a {
   color: #313131;
   text-decoration: none;

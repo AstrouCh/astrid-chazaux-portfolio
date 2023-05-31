@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module AstridChazauxPortfolio
   class Application < Rails::Application
+    config.assets.enabled = true
     config.assets.paths << "/Users/astridchazaux/astrid-chazaux-portfolio/app/assets/videos"
     config.generators do |generate|
       generate.assets false
