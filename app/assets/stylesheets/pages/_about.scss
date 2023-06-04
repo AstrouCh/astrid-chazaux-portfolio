@@ -1,5 +1,6 @@
 .astrid-photo {
-  object-fit: cover;
+  object-fit: contain;
   width: auto;
-  height: 250px;
+  height: 70vh;
+  margin: 1rem;
 }

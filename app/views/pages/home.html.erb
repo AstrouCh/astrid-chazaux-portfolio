@@ -1,31 +1,24 @@
 <div class="main-page">
   <div class="left-box">
-    <H1>ASTRID</H1>
-    <H1>CHAZAUX</H1>
-    <H2>Full-Stack Developer</H2>
+    <h1>ASTRID</h1>
+    <h1>CHAZAUX</h1>
+    <h2>Full-Stack Developer</h2>
   </div>
   <div class="right-box">
     <div class="navbar">
       <ul class="hoverable">
-        <li><a href="#">MY WORK |</a></li>
-        <li> <%= link_to "ABOUT ME", about_path %> </li>
+        <li><%= link_to "MY WORK", root_path %></li>
+        <li>|</li>
+        <li><%= link_to "ABOUT ME", about_path %></li>
       </ul>
     </div>
     <div class="project-container">
-        <p>weekend.ink<p>
-          <%= video_tag "weekend.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
-        <div class="website-links hoverable">
-          <a href="https://www.weekend.ink/"><i class="fa-solid fa-globe"></i></a>
-          <a href="https://github.com/rmPablo1/weekend"><i class="fab fa-github"></i></a>
-        </div>
+      <p>weekend.ink</p>
+      <%= video_tag "weekend.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
+      <div class="hoverable website-links">
+        <a href="https://www.weekend.ink/"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://github.com/rmPablo1/weekend"><i class="fab fa-github"></i></a>
+      </div>
     </div>
     <div class="project-container">
-        <p>otroser.es<p>
-          <%= video_tag "Otroser.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
-         <div class="website-links hoverable">
-            <a href='https://otroser.herokuapp.com'><i class="fa-solid fa-globe"></i></a>
-            <a href="https://github.com/AstrouCh/otroser"><i class="fab fa-github"></i></a>
-          </div>
-    </div>
-  </div>
-</div>
+      <p>otroser.es</p>

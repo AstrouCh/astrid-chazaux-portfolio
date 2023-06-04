@@ -7,10 +7,10 @@
   <div class="right-box">
     <div class="navbar">
       <ul class="hoverable">
-        <li><a href="#">MY WORK |</a></li>
-        <li><a href="#">ABOUT ME</a></li>
+        <li> <%= link_to "MY WORK", root_path %> </li>
+        <li>|</li>
+        <li> <%= link_to "ABOUT ME", about_path %> </li>
       </ul>
-<a href="https://github.com/AstrouCh/otroser"><i class="fab fa-github"></i></a>
     </div>
     <div class="project-container">
       <%= image_tag "IMG_1185.JPG", alt: "Astrid Chazaux's photo", class:"astrid-photo" %>
