@@ -1,14 +1,9 @@
 body {
   height: 100vh;
   background: #010101;
-  cursor: none;
   margin: 0;
   display: flex;
   font-family: monospace;
-
-  h1, p , a {
-    pointer-events: none;
-  }
 
   a {
     border-bottom: 2px solid #fff;
