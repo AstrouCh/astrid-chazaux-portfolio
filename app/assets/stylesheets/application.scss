@@ -26,7 +26,6 @@ a:hover {
 
 .main-page {
   display: flex;
-  overflow: auto;
 }
 
 
@@ -110,19 +109,21 @@ ul {
   margin-left: 2rem;
 }
 
-// .project-container:before {
-//   content: "";
-//   width: 100%;
-//   height: 100%;
-//   top: -2em;
-//   right: -2em;
-//   border: 4px solid #313131;
-//   position: absolute;
-// }
+.project-container:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -2em;
+  right: -2em;
+  border: 4px solid #313131;
+  position: absolute;
+  z-index: -1;
+}
 
 .website-links {
   margin-bottom: 3rem;
   margin-left: 2rem;
+  z-index: 1;
 }
 
 .website-links a {
@@ -130,4 +131,42 @@ ul {
   text-decoration: none;
   font-size: 50px;
   padding: 0px 10px;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 4rem;
+  width: 92%;
+  height: 100%;
+  background-color: rgba(49, 49, 49, 0.95);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-container:hover .video-overlay {
+  opacity: 1;
+}
+
+.project-container:hover .video-overlay-text {
+  opacity: 1;
 }

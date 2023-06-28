@@ -1,29 +1,15 @@
-body {
-  height: 100vh;
-  background: #010101;
-  margin: 0;
-  display: flex;
-  font-family: monospace;
+.cursor {
+  pointer-events: none;
 
-  a {
-    border-bottom: 2px solid #fff;
-    padding: 10px 0;
-    margin-top: 25px;
-  }
+  &__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
 
-  .cursor {
-    pointer-events: none;
-
-    &__ball {
-      position: fixed;
-      top: 0;
-      left: 0;
-      mix-blend-mode: difference;
-      z-index: 1000;
-
-      circle {
-        fill: #f7f8fa;
-      }
+    circle {
+      fill: #f7f8fa;
     }
   }
 }

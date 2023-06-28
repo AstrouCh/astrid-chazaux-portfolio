@@ -14,19 +14,38 @@
     </div>
     <div class="project-container">
       <p>weekend.ink</p>
-      <%= video_tag "weekend.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
+      <div class="video-wrapper">
+        <%= video_tag "weekend.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
+        <div class="video-overlay">
+          <div class="video-overlay-text">
+            <p>Weekend is an online calendar where you can import your personal calendar and share it with your friends - ideal to find the perfect date to meet!</p>
+            <p>The calendar is meant to plan fun, so we decided to adopt a neobrutalism design with loads of colors.</p>
+            <p>We had 2 weeks to develop this website, during Le Wagon Bootcamp.</p>
+          </div>
+        </div>
+      </div>
       <div class="website-links">
         <a href="https://www.weekend.ink/" target="_blank"><i class="fa-solid fa-globe hoverable"></i></a>
         <a href="https://github.com/rmPablo1/weekend" target="_blank"><i class="fab fa-github hoverable"></i></a>
       </div>
     </div>
+
     <div class="project-container">
       <p>otroser.es</p>
-       <%= video_tag "Otroser.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
-         <div class="website-links">
-            <a href='https://otroser.herokuapp.com' target="_blank"><i class="fa-solid fa-globe hoverable"></i></a>
-            <a href="https://github.com/AstrouCh/otroser" target="_blank"><i class="fab fa-github hoverable"></i></a>
+      <div class="video-wrapper">
+        <%= video_tag "Otroser.mov", autoplay: :autoplay, loop: :loop, muted: :muted, class: "website_video" %>
+        <div class="video-overlay">
+          <div class="video-overlay-text">
+            <p>Otroser is an Argentinian photographer.</p>
+            <p>He needed a simple, sober website to display his work.</p>
+            <p>With this app, he can load his series of photos himself.</p>
           </div>
+        </div>
+      </div>
+      <div class="website-links">
+        <a href='https://otroser.herokuapp.com' target="_blank"><i class="fa-solid fa-globe hoverable"></i></a>
+        <a href="https://github.com/AstrouCh/otroser" target="_blank"><i class="fab fa-github hoverable"></i></a>
+      </div>
     </div>
   </div>
 </div>
