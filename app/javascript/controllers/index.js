@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import ContactFormPopupController from "./contact_form_popup_controller"
+application.register("contact-form-popup", ContactFormPopupController)
+
 import CursorController from "./cursor_controller"
 application.register("cursor", CursorController)
 

@@ -3,6 +3,7 @@
     <h1>ASTRID</h1>
     <h1>CHAZAUX</h1>
     <h2>Full-Stack Developer</h2>
+    <button class="reach-button hoverable" data-controller="contact-form-popup">Contact me!</button>
   </div>
   <div class="right-box">
     <div class="navbar">
@@ -47,5 +48,33 @@
         <a href="https://github.com/AstrouCh/otroser" target="_blank"><i class="fab fa-github hoverable"></i></a>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="popup" id="contact-popup">
+  <div class="popup-content">
+    <h3>Contact me</h3>
+      <form>
+        <div class="form-row">
+          <label for="name">What's your name?</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Your e-mail address?</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="centered-button">Send</button>
+        </div>
+      </form>
+    <div class="social-links">
+      <a href="mailto:astridchazaux@hotmail.fr"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/astridchazaux/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <button class="close-button">&times;</button>
   </div>
 </div>
