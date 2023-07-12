@@ -58,26 +58,7 @@
   <div class="popup-content">
     <h3>Contact me</h3>
 
-
-      <%# <form>
-        <div class="form-row">
-          <label for="name">What's your name?</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-row">
-          <label for="email">Your e-mail address?</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-row">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <div class="form-row">
-          <button type="submit" class="centered-button">Send</button>
-        </div>
-      </form> %>
-
-      <%= form_with scope: :contact_form, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
+      <%= form_with model: @contact do |form| %>
         <div class="form-row">
           <%= form.label :name %>
           <%= form.text_field :name, id: "name" %>
