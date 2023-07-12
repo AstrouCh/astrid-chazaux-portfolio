@@ -22,12 +22,15 @@
             <p>Weekend is an online calendar where you can import your personal calendar and share it with your friends - ideal to find the perfect date to meet!</p>
             <p>The calendar is meant to plan fun, so we decided to adopt a neobrutalism design with loads of colors.</p>
             <p>We had 2 weeks to develop this website, during Le Wagon Bootcamp.</p>
+            <p>The pitch of the project can be seen <a href="https://www.youtube.com/watch?v=nhlmduVKoK8" target="_blank">here</a>!</p>
           </div>
         </div>
       </div>
       <div class="website-links">
         <a href="https://www.weekend.ink/" target="_blank"><i class="fa-solid fa-globe hoverable"></i></a>
         <a href="https://github.com/rmPablo1/weekend" target="_blank"><i class="fab fa-github hoverable"></i></a>
+        <a href="https://www.youtube.com/watch?v=nhlmduVKoK8" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
       </div>
     </div>
 
@@ -54,7 +57,9 @@
 <div class="popup" id="contact-popup">
   <div class="popup-content">
     <h3>Contact me</h3>
-      <form>
+
+
+      <%# <form>
         <div class="form-row">
           <label for="name">What's your name?</label>
           <input type="text" id="name" name="name" required>
@@ -70,7 +75,29 @@
         <div class="form-row">
           <button type="submit" class="centered-button">Send</button>
         </div>
-      </form>
+      </form> %>
+
+      <%= form_with scope: :contact_form, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
+        <div class="form-row">
+          <%= form.label :name %>
+          <%= form.text_field :name, id: "name" %>
+        </div>
+        <div class="form-row">
+          <%= form.label :email %>
+          <%= form.email_field :email, id: "email" %>
+        </div>
+        <div class="form-row">
+          <%= form.label :message %>
+          <%= form.text_area :message, id: "message" %>
+        </div>
+        <%= form.submit "Send", class: "centered-button" %>
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>">
+            <%= value %>
+          </div>
+        <% end %>
+      <% end %>
+
     <div class="social-links">
       <a href="mailto:astridchazaux@hotmail.fr"><i class="fas fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/astridchazaux/" target="_blank"><i class="fab fa-linkedin"></i></a>
