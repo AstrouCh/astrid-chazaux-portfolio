@@ -58,7 +58,7 @@
   <div class="popup-content">
     <h3>Contact me</h3>
 
-      <%= form_with model: @contact do |form| %>
+      <%= form_with model: @contact, url: contact_index_path do |form| %>
         <div class="form-row">
           <%= form.label :name %>
           <%= form.text_field :name, id: "name" %>

@@ -1,24 +1,75 @@
 .intro {
   justify-content: center;
+  display: flex;
 }
 
-.astrid-photo {
-  width: 20%;
+.intro-photo {
+  width: 15%;
   border-radius: 50%;
   margin-top: 1rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 
-.astrid-intro {
+.intro-text {
   margin-bottom: 2rem;
   margin-left: 2rem;
+  margin-top: 3rem;
+
 }
 
-.project-container {
+.aboutme-container {
 
   p {
     margin: 2rem;
     margin-bottom: 3rem;
     margin-left: 3rem;
 
+  }
+}
+
+.aboutme-header {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+#scroll-container {
+  overflow: hidden;
+  margin-left: 3rem;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
