@@ -1,1 +1,15 @@
 // Specific CSS for your home-page
+.home {
+  text-align: center;
+}
+
+.home-intro {
+  margin-top: 10rem;
+}
+
+.home-button {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}

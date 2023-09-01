@@ -1,13 +1,15 @@
 <div class="main-page">
   <div class="left-box">
-    <H1>ASTRID</H1>
-    <H1>CHAZAUX</H1>
-    <H2>Full-Stack Developer</H2>
+    <%= link_to
+      <h1>ASTRID</h1>
+      <h1>CHAZAUX</h1>
+      <h2>Full-Stack Developer</h2>,
+      root_path %>
   </div>
   <div class="right-box">
     <div class="navbar">
       <ul class="hoverable">
-        <li> <%= link_to "MY WORK", root_path %> </li>
+        <li> <%= link_to "MY WORK", myprojects_path %> </li>
         <li>|</li>
         <li> <%= link_to "ABOUT ME", about_path %> </li>
       </ul>
